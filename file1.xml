@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UniversitySalaries>
+    <Faculty name="Engineering">
+        <Department name="Computer Science">
+            <Scientist id="1" position="Professor" salary="3000" yearsOnPosition="10" firstName="John" lastName="Doe" middleName="Michael" />
+            <Scientist id="2" position="Associate Professor" salary="2500" yearsOnPosition="6" firstName="Jane" lastName="Smith" />
+            <Scientist id="3" position="Lecturer" salary="2000" yearsOnPosition="3" firstName="Emily" lastName="Taylor" />
+        </Department>
+        <Department name="Mechanical Engineering">
+            <Scientist id="4" position="Professor" salary="3200" yearsOnPosition="12" firstName="Robert" lastName="Brown" />
+            <Scientist id="5" position="Lecturer" salary="1800" yearsOnPosition="2" firstName="Lisa" lastName="Adams" middleName="Marie" />
+        </Department>
+    </Faculty>
+    <Faculty name="Science">
+        <Department name="Physics">
+            <Scientist id="6" position="Researcher" salary="2800" yearsOnPosition="7" firstName="Albert" lastName="Einstein" />
+            <Scientist id="7" position="Lecturer" salary="2000" yearsOnPosition="3" firstName="Isaac" lastName="Newton" />
+        </Department>
+        <Department name="Chemistry">
+            <Scientist id="8" position="Researcher" salary="2600" yearsOnPosition="5" firstName="Marie" lastName="Curie" middleName="Sklodowska" />
+            <Scientist id="9" position="Assistant" salary="1500" yearsOnPosition="2" firstName="Dmitri" lastName="Mendeleev" />
+            <Scientist id="10" position="Lab Technician" salary="1400" yearsOnPosition="1" firstName="Rosalind" lastName="Franklin" />
+        </Department>
+        <Department name="Mathematics">
+            <Scientist id="11" position="Professor" salary="3000" yearsOnPosition="8" firstName="Alan" lastName="Turing" />
+            <Scientist id="12" position="Assistant Professor" salary="2200" yearsOnPosition="4" firstName="Ada" lastName="Lovelace" />
+        </Department>
+    </Faculty>
+    <Faculty name="Arts">
+        <Department name="Music">
+            <Scientist id="13" position="Instructor" salary="2000" yearsOnPosition="5" firstName="Ludwig" lastName="Beethoven" />
+            <Scientist id="14" position="Lecturer" salary="1800" yearsOnPosition="3" firstName="Wolfgang" lastName="Mozart" />
+            <Scientist id="15" position="Assistant" salary="1500" yearsOnPosition="2" firstName="Frederic" lastName="Chopin" />
+        </Department>
+        <Department name="Literature">
+            <Scientist id="16" position="Professor" salary="2800" yearsOnPosition="7" firstName="William" lastName="Shakespeare" />
+            <Scientist id="17" position="Lecturer" salary="2200" yearsOnPosition="4" firstName="Jane" lastName="Austen" />
+        </Department>
+    </Faculty>
+    <Faculty name="Business">
+        <Department name="Accounting">
+            <Scientist id="18" position="Professor" salary="3500" yearsOnPosition="10" firstName="Michael" lastName="Porter" />
+            <Scientist id="19" position="Lecturer" salary="2300" yearsOnPosition="5" firstName="Philip" lastName="Kotler" />
+        </Department>
+        <Department name="Marketing">
+            <Scientist id="20" position="Researcher" salary="2700" yearsOnPosition="6" firstName="Seth" lastName="Godin" />
+            <Scientist id="21" position="Assistant" salary="1600" yearsOnPosition="2" firstName="David" lastName="Ogilvy" />
+        </Department>
+    </Faculty>
+</UniversitySalaries>

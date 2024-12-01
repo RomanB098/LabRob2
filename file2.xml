@@ -1,0 +1,43 @@
+<UniversitySalaries>
+    <Faculty name="Engineering">
+        <Department name="Civil Engineering">
+            <Scientist id="1" position="Professor" salary="3100" yearsOnPosition="11" firstName="Mark" lastName="Johnson"/>
+            <Scientist id="2" position="Senior Lecturer" salary="2400" yearsOnPosition="7" firstName="Anna" lastName="Williams"/>
+            <Scientist id="3" position="Assistant Lecturer" salary="1900" yearsOnPosition="3" firstName="Paul" lastName="Jones"/>
+        </Department>
+        <Department name="Electrical Engineering">
+            <Scientist id="4" position="Researcher" salary="2700" yearsOnPosition="8" firstName="Sarah" lastName="Miller"/>
+            <Scientist id="5" position="Lecturer" salary="2100" yearsOnPosition="4" firstName="Chris" lastName="Wilson"/>
+        </Department>
+    </Faculty>
+    <Faculty name="Science">
+        <Department name="Biology">
+            <Scientist id="6" position="Professor" salary="3200" yearsOnPosition="10" firstName="Laura" lastName="Davis"/>
+            <Scientist id="7" position="Researcher" salary="2600" yearsOnPosition="6" firstName="James" lastName="Moore"/>
+        </Department>
+        <Department name="Geology">
+            <Scientist id="8" position="Associate Professor" salary="2800" yearsOnPosition="7" firstName="Karen" lastName="Taylor"/>
+            <Scientist id="9" position="Lab Technician" salary="1500" yearsOnPosition="2" firstName="Brian" lastName="Anderson"/>
+        </Department>
+    </Faculty>
+    <Faculty name="Arts">
+        <Department name="Fine Arts">
+            <Scientist id="10" position="Instructor" salary="2000" yearsOnPosition="5" firstName="Sophia" lastName="Thomas"/>
+            <Scientist id="11" position="Lecturer" salary="2200" yearsOnPosition="4" firstName="Oliver" lastName="Jackson"/>
+        </Department>
+        <Department name="Drama">
+            <Scientist id="12" position="Professor" salary="2900" yearsOnPosition="9" firstName="Emma" lastName="White"/>
+            <Scientist id="13" position="Assistant" salary="1600" yearsOnPosition="3" firstName="Liam" lastName="Harris"/>
+        </Department>
+    </Faculty>
+    <Faculty name="Business">
+        <Department name="Finance">
+            <Scientist id="14" position="Professor" salary="3500" yearsOnPosition="12" firstName="Benjamin" lastName="Martin"/>
+            <Scientist id="15" position="Lecturer" salary="2400" yearsOnPosition="6" firstName="Grace" lastName="Lee"/>
+        </Department>
+        <Department name="Human Resources">
+            <Scientist id="16" position="Researcher" salary="2500" yearsOnPosition="5" firstName="Ethan" lastName="Clark"/>
+            <Scientist id="17" position="Assistant" salary="1700" yearsOnPosition="2" firstName="Chloe" lastName="Lewis"/>
+        </Department>
+    </Faculty>
+</UniversitySalaries>
