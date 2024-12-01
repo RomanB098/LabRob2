@@ -1,0 +1,16 @@
+/bin/
+/obj/
+/.vs/
+/Debug/
+/Release/
+*.suo
+*.user
+*.cache
+*.pdb
+*.log
+*.tmp
+*.vscode
+*.db
+*.lock
+*.dll
+*.exe

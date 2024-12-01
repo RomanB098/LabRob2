@@ -1,0 +1,81 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XMLProcessor.MainPage"
+             Title="XML Processor">
+    
+    <Grid RowDefinitions="Auto,Auto,*" Padding="20" RowSpacing="10">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="20" Margin="0,0,0,10">
+            <Grid ColumnDefinitions="*,10*,*" ColumnSpacing="10">
+                <Button x:Name="InfoButton" Text="Info" Grid.Column="0" Clicked="InfoButton_Clicked" />
+                <Button Text="Select File" Command="{Binding SelectFileCommand}" Grid.Column="1" />
+                <Button Text="Exit" Grid.Column="2" Clicked="ExitButton_Clicked"/>
+            </Grid>
+
+            <VerticalStackLayout x:Name="FilterAndActionSection" IsVisible="{Binding IsFilterAndActionVisible}" Spacing="20">
+
+                <Grid ColumnDefinitions="*,*,*,*,*,*" RowDefinitions="Auto, Auto, Auto" ColumnSpacing="10" RowSpacing="10">
+
+                    <Picker ItemsSource="{Binding Faculties}" SelectedItem="{Binding SelectedFaculty}" 
+                Title="Select Faculty" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
+
+                    <Picker ItemsSource="{Binding Departments}" SelectedItem="{Binding SelectedDepartment}" 
+                Title="Select Department" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" />
+
+                    <Picker ItemsSource="{Binding Positions}" SelectedItem="{Binding SelectedPosition}" 
+                Title="Select Position" Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+                    <Label Text="Salary Range" VerticalTextAlignment="Center" Grid.Column="0" Grid.Row="1" />
+                    <Entry Text="{Binding MinSalary, Mode=TwoWay}" Placeholder="Min Salary" Keyboard="Numeric" Grid.Column="0" Grid.Row="2" />
+                    <Entry Text="{Binding MaxSalary, Mode=TwoWay}" Placeholder="Max Salary" Keyboard="Numeric" Grid.Column="1" Grid.Row="2" />
+
+                    <Label Text="Years on Position" VerticalTextAlignment="Center" Grid.Column="2" Grid.Row="1" />
+                    <Entry Text="{Binding MinYears, Mode=TwoWay}" Placeholder="Min Years" Keyboard="Numeric" Grid.Column="2" Grid.Row="2" />
+                    <Entry Text="{Binding MaxYears, Mode=TwoWay}" Placeholder="Max Years" Keyboard="Numeric" Grid.Column="3" Grid.Row="2" />
+
+                    <Picker ItemsSource="{Binding ParsingStrategies}" SelectedItem="{Binding ParsingStrategy}" 
+                Title="Select Parsing Strategy" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+                </Grid>
+
+                <Grid ColumnDefinitions="10*,10*,2*" ColumnSpacing="10">
+                    <Button Text="Search" Command="{Binding SearchCommand}" Grid.Column="0" />
+                    <Button Text="Transform" Command="{Binding TransformCommand}" Grid.Column="1" />
+                    <Button Text="Clear" Command="{Binding ClearCommand}" Grid.Column="2" />
+                </Grid>
+            </VerticalStackLayout>
+        
+
+           
+
+        </VerticalStackLayout>
+
+        <Grid ColumnDefinitions="*,1.5*,*,*,*,1.5*,*,*" IsVisible="{Binding IsSearchResultsVisible}" Grid.Row="1">
+            <Label Text="Faculty" FontAttributes="Bold" Grid.Column="0" />
+            <Label Text="Department" FontAttributes="Bold" Grid.Column="1" />
+            <Label Text="First Name" FontAttributes="Bold" Grid.Column="2" />
+            <Label Text="Middle Name" FontAttributes="Bold" Grid.Column="3" />
+            <Label Text="Last Name" FontAttributes="Bold" Grid.Column="4" />
+            <Label Text="Position" FontAttributes="Bold" Grid.Column="5" />
+            <Label Text="Years on Position" FontAttributes="Bold" Grid.Column="6" />
+            <Label Text="Salary" FontAttributes="Bold" Grid.Column="7" />
+        </Grid>
+
+        <CollectionView ItemsSource="{Binding SearchResults}" IsVisible="{Binding IsSearchResultsVisible}" Grid.Row="2">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,1.5*,*,*,*,1.5*,*,*">
+                        <Label Text="{Binding Faculty, TargetNullValue='N/A'}" Grid.Column="0" />
+                        <Label Text="{Binding Department}" Grid.Column="1" />
+                        <Label Text="{Binding FirstName}" Grid.Column="2" />
+                        <Label Text="{Binding MiddleName}" Grid.Column="3" />
+                        <Label Text="{Binding LastName}" Grid.Column="4" />
+                        <Label Text="{Binding Position}" Grid.Column="5" />
+                        <Label Text="{Binding YearsOnPosition}" Grid.Column="6" />
+                        <Label Text="{Binding Salary}" Grid.Column="7" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
